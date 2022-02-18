@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    /> -->
+
+    <nav>
+      <div class="ctr">
+        <a href="index.html" id="n1">HOME</a>
+        <a href="login.html" id="n2">LOGIN</a>
+        <a href="about.html" id="n3">ABOUT</a>
+        <a href="app.html" id="n4" target="_blank">APP</a>
+      </div>
+    </nav>
+
+    <!-- <img class="nav-logo" src="assets/nav_logo.png" /> -->
+  </head>
+
+  <body id="body" style="display: flex; flex-direction: column">
+    <div class="slide" id="s1">
+      <div class="content">
+        <center class="col-flex">
+          <h1>THE DELIVERY BOY</h1>
+          <center><img id="s1-logo" src="assets/slide1-logo.png" /></center>
+          <label class="col-flex">
+            <label
+              style="padding-bottom: 20px; font-size: 22px; font-weight: 800"
+              >PRESENTED BY</label
+            >
+            <label>UJJAWAL ANAND</label>
+            <label>SHARAN B</label>
+            <label>ADITYA S</label>
+          </label>
+        </center>
+      </div>
+    </div>
+
+    <div class="slide" style="background-color: white">
+      <div class="content col-flex">
+        <div class="row-flex">
+          <div style="width: 50%">
+            <div
+              style="position: relative; top: 50%; transform: translateY(-50%)"
+            >
+              <h1>POINTERS</h1>
+              <p style="margin-top: 30px">
+                A pointer is a variable whose value is the address of another
+                variable, i.e., direct address of the memory location. Like any
+                variable or constant, you must declare a pointer before using it
+                to store any variable address.
+              </p>
+              <p style="margin-top: 30px">
+                The difficulty we usually have with POINTERS has much to do with
+                C's pointer terminology than the actual concept. It is difficult
+                to get a grip on Pointers just by listening to a discussion on
+                Pointers, therefore to overcome this difficulty the three of us
+                as team have come up with an idea to demonstrate the working of
+                pointers through a simple game which has been developed keeping
+                in mind the idea of replicating the most fundamental and simple
+                programming concepts involved in pointers.
+              </p>
+            </div>
+          </div>
+          <div style="width: 50%">
+            <img
+              style="height: 150px; width: 334px; margin: 40px 50px"
+              src="assets/s2_p1.png"
+            />
+
+            <img
+              style="width: 403px; height: 200px; margin: 40px 50px"
+              src="assets/s2_p2.png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" style="background-color: #fffcdc">
+      <div class="content">
+        <h1>How are we demonstrating concept of pointers though our game?</h1>
+
+        <p style="margin-top: 30px">
+          Our player is acting like a pointer which is pointing towards other
+          pointer(ADDRESS) and we are updating it's value accordingly. Each
+          ADDRESS is also acting like a pointer variable which is pointing to a
+          specific PACKAGE_NAME. But since it's a game we can't show the package
+          name directly else it won't be fun.
+        </p>
+        <p style="margin-top: 30px">
+          A sheet will be shown for a brief moment which contains the 'Address' and
+          'Package name'. In that brief moment he has to remember the 'Address' and
+          their corresponding 'Package name'. Whenever he will visit the address
+          he has to choose the correct package from his bag. For choosing the correct package
+          he will be awarded points and for choosing each incorrect package points will be
+          deducted accordingly. He can also choose "not to deliver" for which he would neither gain nor lose any points.
+          <a href="#rules" style="text-decoration: none; color: #516beb"
+            >Read rules</a
+          >
+          For more details.
+        </p>
+      </div>
+    </div>
+
+    <div class="slide" id="rules" style="background-color: white">
+      <div class="content">
+        <h1>Rules in our game!</h1>
+        <p style="margin-top: 30px">
+          <b>1: </b>There are going to be 5 levels. For every level the user completes he will be awarded with 1000 points. If he manages to complete the level within a shorter span of time lesser than the record set for that level by some user he will be awarded 1200 points.
+        </p>
+        <p style="margin-top: 30px">
+          <b>2: </b>From level-2 onwards hints won't be available to the player. If incase the player wishes to access hints 40 points would be deducted from the overall points that he has scored until that point of time in the game.
+          
+        </p>
+        <p style="margin-top: 30px">
+          <b>3: </b> Each correct delivery will be awarded with 100 points. Each incorrect
+          delivery will result in a deduction of 30 points from the users score. Not delivering anything will 
+          have no effect on the score of the player.
+        </p>
+        <p style="margin-top: 30px">
+          <b>4: </b>Player will be allowed to wait for a maximum of 10 seconds at each address, choosing the right package will add 30 points to his overall score.
+          Selecting the package earlier than 10 seconds will fetch the player bonus points. The number of bonus points awarded to the player would be equal to the number of remaining seconds that were available at the time at which the player completed the game times "10". 
+          For Example , Let' assume a player finishes a game in 5 seconds. According to our formula based on which bonus points are calculated , the player will now score an additional of ( 5 * 10 = 50 ) points.
+          Note :- If the player fails to complete the task within the specified duration ( 10 seconds ) , 20 points will be deducted from his overall points
+        </p>
+        <p style="margin-top: 30px">
+          <b>5: </b>Overall points will be calculated by adding the points scored in each of the 5 levels ( including the bonus points ). 
+          The leaderboard will then be displayed.
+        </p>
+        <p style="margin-top: 50px">
+          Have fun playing and competing with your friends!! We hope you have found this game engaging and also learnt a thing or two aboout "Pointers"!! Thank you.
+        </p>
+      </div>
+    </div>
+  </body>
+
+  <script></script>
+</html>
